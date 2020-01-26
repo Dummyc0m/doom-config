@@ -67,3 +67,5 @@
 
 (add-hook! 'rustic-mode-hook #'rust-analyzer-inlay-hints-mode)
 
+(load! "tutch/tutch-mode.el")
+(add-to-list 'auto-mode-alist '("\\.tut\\'" . tutch-mode ))
