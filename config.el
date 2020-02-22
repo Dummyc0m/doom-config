@@ -19,10 +19,7 @@
 
 ;; rust-analyzer
 (setq lsp-rust-server 'rust-analyzer)
-;; (defvar rustic-lsp-server)
-;; (defvar lsp-rust-analyzer-server-display-inlay-hints)
 (setq lsp-rust-analyzer-server-display-inlay-hints t)
-;; (defvar lsp-rust-analyzer-max-inlay-hint-length)
 (setq lsp-rust-analyzer-max-inlay-hint-length 16)
 (setq lsp-rust-analyzer-cargo-watch-enable t)
 (setq lsp-rust-analyzer-cargo-watch-command "watch -x clippy")
@@ -33,3 +30,7 @@
 (map! :map lsp-mode-map :n "K" #'lsp-describe-thing-at-point)
 (map! :map rustic-mode-map :leader "r x" #'lsp-rust-analyzer-expand-macro)
 (map! :map rustic-mode-map :leader "r i" #'lsp-execute-code-action)
+
+;; tutch
+(load! "tutch/tutch-mode.el")
+(add-to-list 'auto-mode-alist '("\\.tut\\'" . tutch-mode ))
