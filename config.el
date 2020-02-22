@@ -1,5 +1,8 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
+;; latex
+(setq +latex-viewers '(zathura okular evince pdf-tools))
+
 ;; theme
 (setq doom-theme 'doom-vibrant)
 
