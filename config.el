@@ -21,7 +21,8 @@
 ;;   company-completion-finished-hook (remq 'company-prescient-completion-finished company-completion-finished-hook))
 
 ;; rust-analyzer
-(setq lsp-rust-server 'rust-analyzer)
+ (setq rustic-lsp-server 'rust-analyzer)
+
 (setq lsp-rust-analyzer-server-display-inlay-hints t)
 (setq lsp-rust-analyzer-max-inlay-hint-length 16)
 (setq lsp-rust-analyzer-cargo-watch-enable t)
