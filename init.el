@@ -69,6 +69,11 @@
        ;;term              ; terminals in Emacs
        ;;vterm             ; another terminals in Emacs
 
+       :checkers
+       syntax
+       spell
+       ;;grammar
+
        :tools
        ;;ansible
        ;;debugger          ; FIXME stepping through code, to help you add bugs
@@ -77,7 +82,6 @@
        ;;editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
-       flycheck          ; tasing you for every semicolon you forget
        ;;flyspell          ; tasing you for misspelling mispelling
        ;;gist              ; interacting with github gists
        (lookup           ; helps you navigate your code and documentation
@@ -97,7 +101,7 @@
 
        :lang
        ;;agda              ; types of types of types of types...
-       assembly          ; assembly for fun or debugging
+       ;;assembly          ; assembly for fun or debugging
        cc                ; C/C++/Obj-C madness
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
@@ -125,7 +129,7 @@
         )
        ;;lean
        ;;ledger            ; an accounting system in Emacs
-       ;;lua               ; one-based indices? one-based indices
+       lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
