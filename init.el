@@ -71,7 +71,7 @@
 
        :checkers
        syntax
-       spell
+       (spell +aspell)
        ;;grammar
 
        :tools
@@ -102,7 +102,9 @@
        :lang
        ;;agda              ; types of types of types of types...
        ;;assembly          ; assembly for fun or debugging
-       cc                ; C/C++/Obj-C madness
+       (cc                ; C/C++/Obj-C madness
+	+lsp
+	)
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
@@ -116,10 +118,13 @@
        ;;ess               ; emacs speaks statistics
        ;;faust             ; dsp, but you get to keep your soul
        ;;fsharp           ; ML stands for Microsoft's Language
-       ;;go                ; the hipster dialect
-       ;;(haskell +intero) ; a language that's lazier than I am
+       (go +lsp)                ; the hipster dialect
+       (haskell 
+        ;; +dante 
+        +lsp
+        ) ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
-       ;;idris             ;
+       idris             ;
        ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
        ;;javascript        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB

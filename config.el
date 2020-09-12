@@ -40,3 +40,6 @@
 ;; tutch
 (load! "tutch/tutch-mode.el")
 (add-to-list 'auto-mode-alist '("\\.tut\\'" . tutch-mode ))
+
+;; hacky fix for spell module
+(setq ispell-dictionary "en_US")
